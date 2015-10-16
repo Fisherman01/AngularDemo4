@@ -1,0 +1,43 @@
+img {
+width:20%;
+}
+
+#tabsList ul {
+   list-style-type: none;
+}
+
+#tabsList ul li {
+  display: inline;
+  margin: 0;
+}
+
+#imageList ul {
+   list-style-type: none;
+}
+
+#imageList ul li {
+  display: inline;
+  margin: 0;
+}
+
+#img {
+  width: 230px;
+  height: 150px;
+}
+
+.boxed {
+  padding: 20px;
+}
+
+.rounded {
+  border: 2px solid;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: red;
+}
+.ng-valid.ng-dirty {
+  border-color: green;
+}

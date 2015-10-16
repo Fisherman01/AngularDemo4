@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="angularDemo4">
+<head>
+    <meta charset="utf-8">
+    <title>Buy your tank online</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Vendor libraries -->
+    <script src="lib/angular-v1.2.22.js"></script>
+    <!-- Application Files -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-controller="DemoController as demo">
+<header>
+    <h1>Buy your tank online</h1>
+
+    <h2>– an Angular demo –</h2>
+</header>
+<!--  Products Container  -->
+<div class="list-group">
+    <!--  Product Container  -->
+    <div ng-repeat="vehicle in demo.vehicles" class="boxed">
+        <div class="rounded">
+            <h3>
+                {{vehicle.name}}
+                <em class="pull-right">{{vehicle.price | currency}}</em>
+            </h3>
+
+            <!--Image Gallery-->
+            <tank-gallery></tank-gallery>
+
+            <!--tabs-->
+            <tank-tabs></tank-tabs>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

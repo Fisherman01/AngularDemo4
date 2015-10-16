@@ -1,0 +1,7 @@
+<section ng-show="vehicle.images.length" id="imageList">
+    <ul>
+        <li class="thumbnail" ng-repeat="image in vehicle.images">
+            <img ng-src="{{image}}" id="img"/>
+        </li>
+    </ul>
+</section>

@@ -1,0 +1,19 @@
+<!--tabs-->
+<section class="tab"  id="tabsList">
+    <ul class="nav nav-pills">
+        <li ng-class="{ active: tab.isSet(1) }">
+            <a href ng-click="tab.setTab(1)">Description</a>
+        </li>
+        <li ng-class="{ active: tab.isSet(2) }">
+            <a href ng-click="tab.setTab(2)">Specs</a>
+        </li>
+        <li ng-class="{ active: tab.isSet(3) }">
+            <a href ng-click="tab.setTab(3)">Reviews</a>
+        </li>
+    </ul>
+
+    <div ng-show="tab.isSet(1)" ng-include="'html/tank-description.html'"></div>
+    <div tank-specs ng-show="tab.isSet(2)"></div>
+    <tank-review ng-show="tab.isSet(3)"></tank-review>
+
+</section>
